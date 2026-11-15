@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nature and Environment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f7f1;
+            color: #222;
+        }
+
+        header {
+            background-color: #28734a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #1d5437;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main img {
+            width: 80%;
+            max-width: 650px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .card {
+            background-color: white;
+            width: 260px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .help-box {
+            background-color: white;
+            max-width: 650px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28734a;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1d5437;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+        }
+
+
+        .contact-form {
+            background-color: white;
+            max-width: 650px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        .contact-form h2, .contact-form > p {
+            text-align: center;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font: inherit;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+        }
+
+        #formMessage {
+            color: #1d5437;
+            font-weight: bold;
+            text-align: center;
+        }
+\n        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .main img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nature and Environment</h1>
+        <p>Save Nature, Save Life</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#importance">Importance</a>
+        <a href="#biodiversity">Biodiversity</a>
+        <a href="#problems">Problems</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#resources">Useful Links</a>
+        <a href="#feedback">Feedback</a>
+    </nav>
+
+    <div class="main" id="home">
+        <h2>Welcome to My Website</h2>
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000" alt="Green mountains and lake">
+        <p>Nature gives us air, water, food and a beautiful place to live</p>
+          <p> This is our responsibility to save nature and keep environment clean. </p>
+        <button onclick="showMessage()">Click Here</button>
+        <p id="message"></p>
+    </div>
+
+    <div class="main" id="about">
+        <h2>About Nature</h2>
+        <p>Nature is one of the most beautiful gifts we have in our lives. It surrounds us with fresh air, green trees, colourful flowers, flowing rivers, beautiful mountains, and the sweet sounds of birds. Every part of nature has its own charm and makes our world a wonderful place to live. Spending time in nature gives our minds peace and helps us feel relaxed, especially after a busy and stressful day. Nature is not just about beauty; it is also essential for our survival. Trees provide oxygen, plants give us food, rivers supply water, and forests are home to countless animals and birds. Everything in nature is connected, and even a small change can affect the balance of our environment. Unfortunately, pollution, deforestation, and careless human activities are slowly damaging our natural surroundings. We often forget how much we depend on nature until we see its beauty disappearing. Protecting it does not always require big efforts. Simple habits like planting trees, saving water, avoiding plastic, and keeping our surroundings clean can make a real difference. Nature teaches us to live peacefully, stay patient, and appreciate the little things in life. We should respect and protect it, not only for ourselves but also for future generations. After all, a healthy environment means a happier and better life for everyone.</p>
+    </div>
+
+    <h2 style="text-align:center;" id="importance">Importance of Nature</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700" alt="Green forest">
+            <h3>Trees and Forests</h3>
+            <p>Trees give us oxygen, fruits, shade and help keep the air clean.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700" alt="Beautiful natural landscape">
+            <h3>Clean Environment</h3>
+            <p>A clean environment is important for healthy people, plants and animals.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?w=700" alt="Waterfall">
+            <h3>Water</h3>
+            <p>Water is necessary for life. We should not waste or pollute it.</p>
+        </div>
+    </div>
+
+    <h2 style="text-align:center;" id="biodiversity">Biodiversity</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=700" alt="Wild deer in nature">
+            <h3>Wildlife</h3>
+            <p>Wild animals are an important part of nature. We should protect their homes and never harm them.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=700" alt="Green plants">
+            <h3>Plants</h3>
+            <p>Plants provide food and shelter to many living things. They also help maintain the balance of nature.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=700" alt="Ocean waves">
+            <h3>Oceans</h3>
+            <p>Oceans are home to many species and help regulate the Earth's climate. We must keep them free from waste.</p>
+        </div>
+    </div>
+
+    <h2 style="text-align:center;" id="problems">Environmental Problems</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Air Pollution</h3>
+            <p>Smoke from vehicles and factories makes the air dirty and can cause health problems.</p>
+        </div>
+        <div class="card">
+            <h3>Water Pollution</h3>
+            <p>Dumping garbage and chemicals into rivers and lakes harms people, plants and aquatic animals.</p>
+        </div>
+        <div class="card">
+            <h3>Global Warming</h3>
+            <p>Greenhouse gases make the Earth warmer and can change weather patterns.</p>
+        </div>
+        <div class="card">
+            <h3>Deforestation</h3>
+            <p>Cutting too many trees destroys animal habitats and reduces the number of trees that absorb carbon dioxide.</p>
+        </div>
+    </div>
+
+    <div class="main" id="solutions">
+        <div class="help-box">
+        <h2>How Can We Help?</h2>
+        <p>We can all take small steps to protect the environment.</p>
+        <ul style="display:inline-block; text-align:left; line-height:1.8;">
+            <li>Plant more trees and take care of them.</li>
+            <li>Save water and electricity.</li>
+            <li>Use cloth bags instead of single-use plastic bags.</li>
+            <li>Walk, cycle or use public transport when possible.</li>
+            <li>Separate wet and dry waste and recycle materials.</li>
+            <li>Keep parks, roads and water bodies clean.</li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="main" id="resources">
+        <h2>Useful Environmental Websites</h2>
+        <p>Click the links below to learn more about nature and the environment.</p>
+        <p><a href="https://www.unep.org/" target="_blank" rel="noopener">United Nations Environment Programme (UNEP)</a></p>
+        <p><a href="https://www.worldwildlife.org/" target="_blank" rel="noopener">World Wide Fund for Nature (WWF)</a></p>
+        <p><a href="https://climate.nasa.gov/" target="_blank" rel="noopener">NASA Climate Change</a></p>
+        <p><a href="https://moef.gov.in/" target="_blank" rel="noopener">Ministry of Environment, Forest and Climate Change (India)</a></p>
+    </div>
+
+
+    <section class="main" id="feedback">
+        <form class="contact-form" id="feedback">
+            <h2>Contact us</h2>
+            <p>Have a question or suggestion about protecting nature? Send us a message.</p>
+
+            <label for="visitorName">Your Name</label>
+            <input type="text" id="visitorName" name="name" placeholder="Enter your name" required>
+
+            <label for="visitorEmail">Email Address</label>
+            <input type="email" id="visitorEmail" name="email" placeholder="Enter your email address" required>
+
+            <label for="formTopic">Subject</label>
+            <select id="formTopic" name="subject" required>
+                <option value="">Select a subject</option>
+                <option>Environmental question</option>
+                <option>Suggestion</option>
+                <option>Report a problem</option>
+                <option>Other</option>
+            </select>
+
+            <label for="visitorMessage">Your Message</label>
+            <textarea id="visitorMessage" name="message" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Submit</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>Thanks for Visiting</p>
+        <p><a href="#home" style="color:white;">Back to Top</a></p>
+    </footer>
+
+    <script>
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("formMessage").textContent =
+                "Thank you! Your message has been entered.";
+            this.reset();
+        });
+       function showMessage() {
+            document.getElementById("message").innerHTML =
+                "SAVE NATURE,SAVE EARTH,SAVE LIFE!";
+        }
+    </script>
+
+</body>
+</html>
